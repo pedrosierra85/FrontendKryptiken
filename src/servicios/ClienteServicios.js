@@ -28,7 +28,7 @@ const ClienteServicios={};
 
 // se debe colocar para que en 2 segundo muestre en pantalla pero no tengo claro para que si es por error de la app al cargar y toca ponerlo a esperar
 ClienteServicios.listadoClientes=()=>{
- return axios.get("http://localhost:3000/clientes");
+ return axios.get("http://localhost:5000/clientes");
 
     // return new Promise((resolve, reject)=>{ time que usamos en el pasado para q se detuviera 2 segundos
     //             setTimeout(()=>{
@@ -39,31 +39,31 @@ ClienteServicios.listadoClientes=()=>{
 
 }
 ClienteServicios.buscarClientes=(criterio)=>{
-    return axios.get("http://localhost:3000/clientes?q="+criterio);
+    return axios.get("http://localhost:5000/clientes?q="+criterio);
 }
 
 ClienteServicios.buscarCliente=(id)=>{
-    return axios.get("http://localhost:3000/clientes/"+id);
+    return axios.get("http://localhost:5000/clientes/"+id);
 }
 
 ClienteServicios.guardarCliente =(cliente)=>{
-    return axios.post("http://localhost:3000/clientes",cliente);
+    return axios.post("http://localhost:5000/clientes",cliente);
 }
 
 ClienteServicios.guardarCliente =(cliente)=>{
-    return axios.post("http://localhost:3000/clientes",cliente);
+    return axios.post("http://localhost:5000/clientes",cliente);
 }
 
 ClienteServicios.modificarCliente =(id, cliente)=>{
-    return axios.put("http://localhost:3000/clientes/"+id, cliente);
+    return axios.put("http://localhost:5000/clientes/"+id, cliente);
 }
 
 ClienteServicios.borrarCliente =(id)=>{
-    return axios.delete("http://localhost:3000/clientes/"+id);
+    return axios.delete("http://localhost:5000/clientes/"+id);
 }
 
 ClienteServicios.guardarTicket =(cliente)=>{
-    return axios.post("http://localhost:3000/clientes",cliente);
+    return axios.post("http://localhost:5000/clientes",cliente);
 }
 
 export default ClienteServicios;
