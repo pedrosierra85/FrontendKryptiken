@@ -18,9 +18,8 @@
   },
   "scripts": {
    "start": "node src/index.js",
-   "heroku-postbuild": "cd src && npm install && npm run build",
+   "heroku-postbuild": "cd src && npm install && npm run build"
 
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
