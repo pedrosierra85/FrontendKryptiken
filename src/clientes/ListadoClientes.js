@@ -118,7 +118,7 @@ const borrarCliente = async () =>{  //cada vez qse coloca un metod de espera awa
                                             <td>{cliente.celular}</td> */}
                                             <td>{cliente.email}</td>
                                             <td>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                                                 <a className="btn btn-warning me-2 float-md-right" href={"/clientes/FormularioClientes/" + cliente._id}>Editar</a>
                                                 <button onClick={()=>{confirmarBorrado(cliente._id, cliente.nombre_completo)}} className="btn btn-danger me-2 btn-sm float-md-right" data-bs-toggle="modal" data-bs-target="#modalBorrado">Eliminar</button>
                                             </div>
